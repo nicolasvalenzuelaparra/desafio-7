@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-columns: 200px auto; 
+    grid-template-rows: auto auto auto;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(143, 195, 243);
+    color: black;
+}
+
+.sidebar-container {
+    grid-area: sidebar;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(143, 195, 243);
+    color:black;
+}
+
+.card .btn-primary  {
+    background-color: rgb(143, 195, 243);
+    color: black;
+    border-color: rgb(143, 195, 243);
+}
+
+.card .btn-primary:hover {
+    background-color: rgb(143, 195, 243);
+}
